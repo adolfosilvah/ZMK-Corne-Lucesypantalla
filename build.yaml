@@ -22,3 +22,18 @@ include:
     shield: corne_left
   - board: nice_nano
     shield: corne_right
+
+west:
+  boards:
+    - nice_nano
+
+build:
+  cmake-args:
+    - -DCONFIG_ZMK_RGB_UNDERGLOW=y
+    - -DCONFIG_ZMK_RGB_EFFECT_BREATHING=y
+    - -DCONFIG_ZMK_RGB_EFFECT_RAINBOW=y
+    - -DCONFIG_ZMK_RGB_EFFECT_STATIC=y
+    - -DCONFIG_ZMK_RGB_HUE_STEP=10
+    - -DCONFIG_ZMK_RGB_SAT_STEP=10
+    - -DCONFIG_ZMK_RGB_BRT_STEP=10
+    - -DCONFIG_ZMK_RGB_SPLIT=y
